@@ -47,7 +47,7 @@ namespace employee_todo_list_api.Controllers
             var foundEmployee = await _context.Employees.FindAsync(id);
             if (foundEmployee == null)
             {
-                this.logger.LogInformation("can't find employee");
+                this.logger.LogInformation("can't find employee in the list");
                 return StatusCode(500);
             }
             return Ok(mapper.Map<EmployeeViewModel>(foundEmployee));
