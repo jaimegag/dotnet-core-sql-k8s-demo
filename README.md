@@ -4,6 +4,8 @@ This is a todo demo application.  It is built with an Angular front end, .NET Co
 
 The rationale for this demo is to demonstrate, how to build and deploy an app with these technologies to Kubernetes.
 
+>Note: To build the app you need [ng](https://angular.io/cli) and either [pack](https://buildpacks.io/docs/tools/pack/) to build locally or [kp](https://github.com/vmware-tanzu/kpack-cli) to build with kpack
+
 ## Deploy the app only
 
 You can directly deploy the app to your Kubernetes cluster without building it, thanks to an existing previously built container image.

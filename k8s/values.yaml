@@ -2,5 +2,5 @@
 ---
 todosApp:
   containerImage: harbor.rito.tkg-vsp-lab.hyrulelab.com/bizops/todos
-  ingressUrl: zora.tkg-vsp-lab.hyrulelab.com
+  ingressUrl: todos.onox.tkg-vsp-lab.hyrulelab.com
   dbPassword: KeepItSimple1!
