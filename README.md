@@ -15,7 +15,7 @@ You can directly deploy the app to your Kubernetes cluster without building it, 
 You can customize for your environment by editing `k8s/values.yaml`. It's by default set to use an Ingress for the app and svc type LB for the DB.
 
 ```bash
-kubectl create ns todos
+kubectl create namespace todos --dry-run=client --output yaml | kubectl apply -f -
 ytt --ignore-unknown-comments -f k8s/ | kapp deploy -n todos -a todos -y -f -
 ```
 
