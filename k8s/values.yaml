@@ -1,6 +1,7 @@
 #@data/values
 ---
 todosApp:
-  containerImage: harbor.rito.tkg-vsp-lab.hyrulelab.com/bizops/todos
+  #containerImage: harbor.rito.tkg-vsp-lab.hyrulelab.com/bizops/todos
+  containerImage: jaimegag/employee-todo-list-api
   ingressUrl: todos.onox.tkg-vsp-lab.hyrulelab.com
   dbPassword: KeepItSimple1!
